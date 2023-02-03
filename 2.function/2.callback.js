@@ -40,4 +40,3 @@ let waiter = function(food, chef) {
 console.log(waiter('짜장면', chef1),
             waiter('짜장면', chef2),
             waiter('짬뽕', chef2))
-            
