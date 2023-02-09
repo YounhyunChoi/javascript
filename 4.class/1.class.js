@@ -1,3 +1,4 @@
+/*
 class User {
     constructor(userName) {
         this.userName = userName
@@ -6,6 +7,14 @@ class User {
     sayHi() {
         console.log(`Hi, I am ${this.userName}.`)
     }
+}
+*/
+function User(userName) {
+    this.userName = userName
+}
+
+User.prototype.sayHi = function() {
+    console.log(`Hi, I am ${this.userName}.`)
 }
 
 let user = new User('john')

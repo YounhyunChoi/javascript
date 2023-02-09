@@ -1,16 +1,16 @@
 class Animal {
-    constructor(animalName) {
-        this.animalName = animalName
+    constructor(name) {
+        this.name = name
     }
 
     run(speed) {
         this.speed = speed
-        console.log(this.animalName, this.speed, 'run.')
+        console.log(this.name, this.speed, 'run.')
     }
 
     stop() {
         this.speed = 0
-        console.log(this.animalName, 'stop.')
+        console.log(this.name, 'stop.')
     }
 }
 
@@ -30,7 +30,7 @@ class Rabbit extends Animal {
     }
     */
     hide() {
-        console.log(this.animalName, 'hide')
+        console.log(this.name, 'hide')
     }
 }
 
@@ -40,13 +40,13 @@ console.log(rabbit)
 rabbit = new Rabbit('rabbit')
 console.log(rabbit)
 
-console.log(rabbit.animalName)
+console.log(rabbit.name)
 rabbit.run(100)
 rabbit.hide()
 
 Rabbit = class extends Animal {
-    constructor(rabbitName, color) {
-        super(rabbitName)
+    constructor(name, color) {
+        super(name)
         this.color = color
     }
 
@@ -56,7 +56,7 @@ Rabbit = class extends Animal {
     }
 
     hide() {
-        console.log(this.animalName, this.color, 'hide.')
+        console.log(this.name, this.color, 'hide.')
     }
 }
 
