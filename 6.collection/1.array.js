@@ -171,3 +171,15 @@ console.log(interest)
 const elements = items.map((item, i) => 
     `<div>${item.itemName}: ${item.price}</div>`)
 console.log(elements)
+
+//
+const totalPrice = items.reduce((total, item) => {
+    total += item.price
+    return total
+}, 0)
+console.log(totalPrice)
+
+//
+let isExit = items.some(item => item.itemName == 'book')
+isExit = items.every(item => item.itemName == 'book')
+console.log(isExit)
